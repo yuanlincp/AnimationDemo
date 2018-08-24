@@ -8,6 +8,8 @@ import android.view.Display;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
+import android.view.animation.ScaleAnimation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -44,7 +46,7 @@ public class ViewAnimationActivity extends AppCompatActivity implements View.OnC
                 rotateAnimation();
                 break;
             case R.id.bt3://缩放
-
+                scaleAnimation();
                 break;
             case R.id.bt4://改变透明度
 
@@ -76,8 +78,26 @@ public class ViewAnimationActivity extends AppCompatActivity implements View.OnC
         imageView.startAnimation(translateAnimation);
     }
 
+    /**
+     * 旋转
+     */
     private void rotateAnimation() {
-
+        RotateAnimation rotateAnimation = new RotateAnimation(0, 90,
+                imageView.getWidth() / 2, imageView.getHeight() / 2);
+        rotateAnimation.setDuration(2000);
+        rotateAnimation.setFillBefore(false);
+        rotateAnimation.setFillAfter(true);
+//        rotateAnimation.setRepeatCount();
+        //可以设置其他属性
+        imageView.startAnimation(rotateAnimation);
     }
+
+    /**
+     * 缩放
+     */
+    private void scaleAnimation() {
+//        ScaleAnimation scaleAnimation=new ScaleAnimation();
+    }
+
 
 }
