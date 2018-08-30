@@ -19,6 +19,7 @@
         <activity android:name=".ViewAnimationActivity" />
         <activity android:name=".FrameAnimationActivity" />
         <activity android:name=".AttributeAnimationActivity" />
+        <activity android:name=".ShoppingCartDemo.ShoppingCartActivity" />
     </application>
 
 </manifest>

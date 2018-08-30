@@ -22,5 +22,16 @@
         android:layout_height="50dp"
         android:text="属性动画" />
 
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="购物车动画" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"/>
+
 
 </LinearLayout>
